@@ -1,9 +1,13 @@
 plugins {
     id 'java'
+    id 'com.github.johnrengelman.shadow' version "7.1.2"
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+group 'javaOtus'
+version '1.0'
+
+apply plugin: "java"
+apply plugin: "com.github.johnrengelman.shadow"
 
 repositories {
     mavenCentral()
@@ -11,9 +15,15 @@ repositories {
 
 dependencies {
     implementation("com.google.guava:guava:31.1-jre")
-    api("com.google.guava:guava:31.1-jre")
 }
 
-test {
-    useJUnitPlatform()
+shadowJar {
+    archiveBaseName.set('fat-jar-file')
+    archiveVersion.set('0.0.2')
+    archiveClassifier.set('')
+    manifest {
+        attributes 'Main-Class': 'ru.otus.example.Main'
+    }
 }
+
+tasks.build.dependsOn tasks.shadowJar
