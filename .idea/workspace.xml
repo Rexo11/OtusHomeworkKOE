@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e712dec-a08d-43f3-8cd5-8fe3f13bf492" name="Changes" comment="Create Homework rep for OTUS">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hw3_collections/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hw3_collections/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hw3_collections/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hw3_collections/Orange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hw3_collections/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hw3_collections/Apple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hw3_collections/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hw3_collections/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hw3_collections/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hw3_collections/Fruit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hw3_collections/Orange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hw3_collections/Orange.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +49,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="hw02-unittest" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,18 +63,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/OTUS/otus-simple-demos"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/OTUS/otus-simple-demos&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="UnitTests.main" />
+      <module name="OtusHomeworkKOE.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

@@ -8,20 +8,20 @@ public class Main {
         Box<Apple> appleBox = new Box<>(new ArrayList<>());
         Box<Apple> appleBox2 = new Box<>(new ArrayList<>());
 
-        Orange orange1 = new Orange(1, 100);
-        Orange orange2 = new Orange(2, 200);
-        Orange orange3 = new Orange(3, 300);
+        Orange orange1 = new Orange(100);
+        Orange orange2 = new Orange(200);
+        Orange orange3 = new Orange(300);
 
-        Apple apple1 = new Apple(1, 100);
-        Apple apple2 = new Apple(1, 200);
-        Apple apple3 = new Apple(1, 300);
-        Apple apple4 = new Apple(1, 400);
+        Apple apple1 = new Apple(100);
+        Apple apple2 = new Apple(200);
+        Apple apple3 = new Apple(300);
+        Apple apple4 = new Apple(400);
 
 
         orangeBox.add(orange1);
         orangeBox.add(orange2);
         orangeBox.add(orange3);
-        // orangeBox.add(apple1); Выдаст ошибку о несовпадении типов
+        //orangeBox.add(apple1); // Выдаст ошибку о несовпадении типов
         appleBox.add(apple1);
         appleBox.add(apple2);
         appleBox.add(apple3);
@@ -36,6 +36,8 @@ public class Main {
         // Сравнение
         System.out.println("Коробки равны по весу? ");
         System.out.println(appleBox.compare(orangeBox));
+        // Попытаемся переложить коробку в саму себя
+        appleBox2.transfer(appleBox2);
         // Переложим из одной коробки в другую
         appleBox2.transfer(appleBox);
         //appleBox2.transfer(orangeBox); вернёт ошибку о несовпадении типов

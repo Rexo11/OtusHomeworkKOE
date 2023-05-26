@@ -4,19 +4,10 @@ import java.util.*;
 
 // Создаём класс переменного типа
 public class Box<T extends Fruit> {
-    private T obj;
-    public List<T> box;
+    private List<T> box;
 
     public Box(List<T> box) {
         this.box = box;
-    }
-
-    public T getObj() {
-        return obj;
-    }
-
-    public void setObj(T obj) {
-        this.obj = obj;
     }
 
     public List<T> getBox() {
@@ -28,13 +19,13 @@ public class Box<T extends Fruit> {
     }
 
     public void add(T fruit) {
-        this.box.add(fruit);
+        box.add(fruit);
     }
 
     public int weight(){
         int weight = 0;
-        for (T i : this.box){
-            weight += i.getWeight() * i.getQount();
+        for (T i : box){
+            weight += i.getWeight();
         }
         return weight;
     }
@@ -44,7 +35,7 @@ public class Box<T extends Fruit> {
     }
 
     public void clear(){
-        this.box.clear();
+        box.clear();
     }
 
     /* public void transfer(Box boxFrom){
@@ -55,7 +46,11 @@ public class Box<T extends Fruit> {
     }*/
 
     public void transfer(Box<T> boxFrom){
-        this.box.addAll(boxFrom.box);
-        boxFrom.clear();
+        if (boxFrom == this) {
+            System.out.println("Нельзя вложить коробку саму в себя");
+        } else {
+            box.addAll(boxFrom.box);
+            boxFrom.clear();
+        }
     }
 }
